@@ -1,6 +1,7 @@
 fun main() {
     //testTwoSum()
-    testPalindromeNumber()
+    //testPalindromeNumber()
+    testLongestCommonPrefix()
 }
 
 private fun testTwoSum() {
@@ -33,5 +34,37 @@ private fun testPalindromeNumber() {
         "$case2\n" +
         "$case3\n" +
         "$test"
+    )
+}
+
+private fun testLongestCommonPrefix() {
+    val problem = LongestCommonPrefix()
+
+    val case1 = problem
+        .longestCommonPrefix(arrayOf("flower","flow","flight"))
+    val case2 = problem
+        .longestCommonPrefix(arrayOf("dog","racecar","car"))
+    val case3 = problem
+        .longestCommonPrefix(arrayOf("A3","A4","a5"))
+    val case4 = problem
+        .longestCommonPrefix(arrayOf("B 3","B 4","B 5"))
+    val case5 = problem
+        .longestCommonPrefix(arrayOf("C  A","C  A","C  AB"))
+    val case6 = problem
+        .longestCommonPrefix(arrayOf("123123","12345","123"))
+    val case7 = problem
+        .longestCommonPrefix(arrayOf("oi","oiola"))
+    val case8 = problem
+        .longestCommonPrefix(arrayOf("oi","alo"))
+
+    println(
+        "$case1\n" +
+        "$case2\n" +
+        "$case3\n" +
+        "$case4\n" +
+        "$case5\n" +
+        "$case6\n" +
+        "$case7\n" +
+        case8
     )
 }
