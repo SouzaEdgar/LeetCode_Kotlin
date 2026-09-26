@@ -1,3 +1,5 @@
+package problems
+
 //      1.Two Sum
 class TwoSum {
     fun twoSum(nums: IntArray, target: Int): IntArray {

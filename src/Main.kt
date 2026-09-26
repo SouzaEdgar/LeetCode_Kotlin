@@ -1,3 +1,7 @@
+import problems.LongestCommonPrefix
+import problems.PalindromeNumber
+import problems.TwoSum
+
 fun main() {
     //testTwoSum()
     //testPalindromeNumber()

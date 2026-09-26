@@ -1,7 +1,10 @@
+package problems
+
 /**
  * Given an integer x, return true if x is a palindrome, and false otherwise.
  */
 
+// 9. Palindrome Number
 class PalindromeNumber {
     fun isPalindrome(x: Int): Boolean {
         if (x >= 0) {
