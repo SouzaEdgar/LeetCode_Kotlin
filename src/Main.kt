@@ -1,3 +1,4 @@
+import problems.FindIndexFirstOccurrence
 import problems.LongestCommonPrefix
 import problems.PalindromeNumber
 import problems.TwoSum
@@ -5,7 +6,8 @@ import problems.TwoSum
 fun main() {
     //testTwoSum()
     //testPalindromeNumber()
-    testLongestCommonPrefix()
+    //testLongestCommonPrefix()
+    testFindIndexFirstOccurrence()
 }
 
 private fun testTwoSum() {
@@ -70,5 +72,23 @@ private fun testLongestCommonPrefix() {
         "$case6\n" +
         "$case7\n" +
         case8
+    )
+}
+
+private fun testFindIndexFirstOccurrence() {
+    val problem = FindIndexFirstOccurrence()
+
+    val case1 = problem.findIndexFirsOccurrence("sadbutsad", "sad")
+    val case2 = problem.findIndexFirsOccurrence("leetcode", "leeto")
+    val case3 = problem.findIndexFirsOccurrence("mississippi", "issip")
+    val case4 = problem.findIndexFirsOccurrence("mississippi", "sipp")
+    val case5 = problem.findIndexFirsOccurrence("a", "a")
+
+    println(
+        "$case1\n" +
+        "$case2\n" +
+        "$case3\n" +
+        "$case4\n" +
+        "$case5"
     )
 }
