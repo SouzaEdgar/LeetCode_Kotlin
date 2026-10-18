@@ -3,13 +3,15 @@ import problems.LongestCommonPrefix
 import problems.PalindromeNumber
 import problems.RomanToInteger
 import problems.TwoSum
+import problems.ValidParentheses
 
 fun main() {
     //testTwoSum()
     //testPalindromeNumber()
     //testLongestCommonPrefix()
     //testFindIndexFirstOccurrence()
-    testRomanToInteger()
+    //testRomanToInteger()
+    testValidParentheses()
 }
 
 private fun testTwoSum() {
@@ -106,5 +108,29 @@ private fun testRomanToInteger() {
         "$case1\n" +
         "$case2\n" +
         "$case3"
+    )
+}
+
+private fun testValidParentheses() {
+    val problem = ValidParentheses()
+
+    val case1 = problem.isValid("()")
+    val case2 = problem.isValid("()[]{}")
+    val case3 = problem.isValid("(]")
+    val case4 = problem.isValid("([])")
+    val case5 = problem.isValid("([)]")
+    val case6 = problem.isValid("[")
+    val case7 = problem.isValid(")")
+    val case8 = problem.isValid("{{")
+
+    println(
+        "$case1\n" +
+        "$case2\n" +
+        "$case3\n" +
+        "$case4\n" +
+        "$case5\n" +
+        "$case6\n" +
+        "$case7\n" +
+        "$case8"
     )
 }
