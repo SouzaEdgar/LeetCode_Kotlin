@@ -37,30 +37,21 @@ class RomanToInteger {
         )
 
         var result = 0
-        var nex: Int
-        var cont = true
-        var num: Int
-        val alg = s.toList()
 
-        for (x in alg.indices) {
-            if (cont) {
-                if (x == alg.indices.last) {
-                    result += roman[alg[x]] ?: 0
-                    break
-                } else {
-                    num = roman[alg[x]] ?: 0
-                    nex = roman[alg[x+1]] ?: 0
+        for (x in s.indices) {
+            println(x)
+            val num = roman[s[x]] ?: 0
+            val nex =
+                if (x+1 < s.length) roman[s[x+1]] ?: 0
+                else 0
 
-                    if (num >= nex) result += num
-                    else {
-                        result += (nex - num)
-                        cont = false
-                    }
-                }
+            if (num < nex) {
+                result -= num
             } else {
-                cont = true
+                result += num
             }
         }
+
         return result
     }
 }
