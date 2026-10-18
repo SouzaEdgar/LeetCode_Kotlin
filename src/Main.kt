@@ -1,13 +1,15 @@
 import problems.FindIndexFirstOccurrence
 import problems.LongestCommonPrefix
 import problems.PalindromeNumber
+import problems.RomanToInteger
 import problems.TwoSum
 
 fun main() {
     //testTwoSum()
     //testPalindromeNumber()
     //testLongestCommonPrefix()
-    testFindIndexFirstOccurrence()
+    //testFindIndexFirstOccurrence()
+    testRomanToInteger()
 }
 
 private fun testTwoSum() {
@@ -90,5 +92,19 @@ private fun testFindIndexFirstOccurrence() {
         "$case3\n" +
         "$case4\n" +
         "$case5"
+    )
+}
+
+private fun testRomanToInteger() {
+    val problem = RomanToInteger()
+
+    val case1 = problem.romanToInt("III")
+    val case2 = problem.romanToInt("LVIII")
+    val case3 = problem.romanToInt("MCMXCIV")
+
+    println(
+        "$case1\n" +
+        "$case2\n" +
+        "$case3"
     )
 }
