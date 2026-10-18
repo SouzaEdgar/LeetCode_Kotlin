@@ -4,6 +4,7 @@ import problems.LongestCommonPrefix
 import problems.MergeTwoSortedLists
 import problems.PalindromeNumber
 import problems.RemoveDuplicatesFromArray
+import problems.RemoveElement
 import problems.RomanToInteger
 import problems.TwoSum
 import problems.ValidParentheses
@@ -16,7 +17,8 @@ fun main() {
     //testRomanToInteger()
     //testValidParentheses()
     //testMergeTwoSortedLists()
-    testRemoveDuplicatesFromArray()
+    //testRemoveDuplicatesFromArray()
+    testRemoveElement()
 
 }
 
@@ -167,4 +169,20 @@ private fun testRemoveDuplicatesFromArray() {
     val case5 = problem.removeDuplicates(intArrayOf(1))
     println(case5)
     //println(case1)
+}
+
+private fun testRemoveElement() {
+    val problem = RemoveElement()
+
+    val case1 = problem.removeElement(intArrayOf(3,2,2,3), 3)
+    val case2 = problem.removeElement(intArrayOf(2,2,2,2), 3)
+    val case3 = problem.removeElement(intArrayOf(2), 3)
+    val case4 = problem.removeElement(intArrayOf(3), 3)
+
+    println(
+        "$case1\n" +
+        "$case2\n" +
+        "$case3\n" +
+        case4
+    )
 }
