@@ -1,5 +1,7 @@
 import problems.FindIndexFirstOccurrence
+import problems.ListNode
 import problems.LongestCommonPrefix
+import problems.MergeTwoSortedLists
 import problems.PalindromeNumber
 import problems.RomanToInteger
 import problems.TwoSum
@@ -11,7 +13,8 @@ fun main() {
     //testLongestCommonPrefix()
     //testFindIndexFirstOccurrence()
     //testRomanToInteger()
-    testValidParentheses()
+    //testValidParentheses()
+    testMergeTwoSortedLists()
 }
 
 private fun testTwoSum() {
@@ -133,4 +136,20 @@ private fun testValidParentheses() {
         "$case7\n" +
         "$case8"
     )
+}
+
+private fun testMergeTwoSortedLists() {
+    val problem = MergeTwoSortedLists()
+
+    val list1 = ListNode(1)
+    list1.next = ListNode(2)
+    list1.next?.next = ListNode(4)
+
+    val list2 = ListNode(1)
+    list2.next = ListNode(3)
+    list2.next?.next = ListNode(4)
+
+    val case1 = problem.mergeTwoLists(list1, list2)
+
+    println("$case1")
 }
