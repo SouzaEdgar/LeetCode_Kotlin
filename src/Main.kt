@@ -1,4 +1,5 @@
 import problems.FindIndexFirstOccurrence
+import problems.LengthLastWord
 import problems.ListNode
 import problems.LongestCommonPrefix
 import problems.MergeTwoSortedLists
@@ -20,7 +21,8 @@ fun main() {
     //testMergeTwoSortedLists()
     //testRemoveDuplicatesFromArray()
     //testRemoveElement()
-    testSearchInsertPosition()
+    //testSearchInsertPosition()
+    testLengthLastWord()
 
 }
 
@@ -194,4 +196,20 @@ private fun testSearchInsertPosition() {
 
     val case1 = problem.searchInsert(intArrayOf(1,3,5,6), 5)
     println(case1)
+}
+
+private fun testLengthLastWord() {
+    val problem = LengthLastWord()
+
+    val case1 = problem.lengthOfLastWord("Hello World")
+    val case2 = problem.lengthOfLastWord("   fly me   to   the moon ")
+    val case3 = problem.lengthOfLastWord("luffy is still joyboy")
+    val case4 = problem.lengthOfLastWord("a")
+
+    println(
+        "$case1\n" +
+        "$case2\n" +
+        "$case3\n" +
+        "$case4"
+    )
 }
