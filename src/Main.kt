@@ -6,6 +6,7 @@ import problems.PalindromeNumber
 import problems.RemoveDuplicatesFromArray
 import problems.RemoveElement
 import problems.RomanToInteger
+import problems.SearchInsertPosition
 import problems.TwoSum
 import problems.ValidParentheses
 
@@ -18,7 +19,8 @@ fun main() {
     //testValidParentheses()
     //testMergeTwoSortedLists()
     //testRemoveDuplicatesFromArray()
-    testRemoveElement()
+    //testRemoveElement()
+    testSearchInsertPosition()
 
 }
 
@@ -185,4 +187,11 @@ private fun testRemoveElement() {
         "$case3\n" +
         case4
     )
+}
+
+private fun testSearchInsertPosition() {
+    val problem = SearchInsertPosition()
+
+    val case1 = problem.searchInsert(intArrayOf(1,3,5,6), 5)
+    println(case1)
 }
