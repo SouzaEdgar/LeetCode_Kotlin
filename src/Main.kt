@@ -4,6 +4,7 @@ import problems.ListNode
 import problems.LongestCommonPrefix
 import problems.MergeTwoSortedLists
 import problems.PalindromeNumber
+import problems.PlusOne
 import problems.RemoveDuplicatesFromArray
 import problems.RemoveElement
 import problems.RomanToInteger
@@ -22,7 +23,8 @@ fun main() {
     //testRemoveDuplicatesFromArray()
     //testRemoveElement()
     //testSearchInsertPosition()
-    testLengthLastWord()
+    //testLengthLastWord()
+    testPlusOne()
 
 }
 
@@ -212,4 +214,11 @@ private fun testLengthLastWord() {
         "$case3\n" +
         "$case4"
     )
+}
+
+private fun testPlusOne() {
+    val problem = PlusOne()
+
+    val case1 = problem.plusOne(intArrayOf(4,9,9))
+    println(case1.contentToString())
 }
